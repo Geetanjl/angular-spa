@@ -33,7 +33,7 @@ steps:
   displayName: 'Install npm package'
 
 - script: './node_modules/.bin/MyApp /wwwroot --output MyAPP/wwwroot'
-  displayName: 'Compile Sass assets'
+  displayName: 'Write build info'
 
 - task: gulp@1
   displayName: 'Run gulp tasks'
