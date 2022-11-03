@@ -26,7 +26,7 @@ steps:
   inputs:
     verbose: false
 
-- script: './node_modules/.bin/node-sass MyApp/wwwroot --output Angulsr-Spa/wwwroot'
+- script: './node_modules/.bin/Release/net6.0 /wwwroot --output net6.0 /wwwroot'
   displayName: 'Compile Sass assets'
 
 - task: gulp@1
