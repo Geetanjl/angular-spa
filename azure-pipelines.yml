@@ -33,7 +33,7 @@ steps:
   displayName: 'Install npm package'
 
 - script: './node_modules/.bin/MyApp /wwwroot --output MyAPP/wwwroot'
-  displayName: 'Write build info'
+  displayName: 'npm Install and build'
 
 - task: gulp@1
   displayName: 'Run gulp tasks'
