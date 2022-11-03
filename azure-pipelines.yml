@@ -26,11 +26,11 @@ steps:
    versionSpec: '10.x'
   displayName: 'Install Node.js'
     
- - task: Npm@1
-   inputs:
-     command: 'install'
-     verbose: true
-   displayName: 'Install npm package'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    verbose: true
+  displayName: 'Install npm package'
 
 - script: './node_modules/.bin/MyApp /wwwroot --output MyAPP/wwwroot'
   displayName: 'Compile Sass assets'
