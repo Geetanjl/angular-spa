@@ -29,7 +29,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-    verbose: true
+    verbose: false
   displayName: 'Install npm package'
 
 - script: './node_modules/.bin/MyApp /wwwroot --output MyAPP/wwwroot'
