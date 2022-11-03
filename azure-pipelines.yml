@@ -21,17 +21,17 @@ steps:
     packageType: sdk
     version: '6.x'
 
- - task: NodeTool@0
-   inputs:
-     versionSpec: '10.x'
-   displayName: 'Install Node.js'
+- task: NodeTool@0
+  inputs:
+   versionSpec: '10.x'
+  displayName: 'Install Node.js'
     
  - task: Npm@1
    inputs:
      command: 'install'
      verbose: true
    displayName: 'Install npm package'
-   
+
 - script: './node_modules/.bin/MyApp /wwwroot --output MyAPP/wwwroot'
   displayName: 'Compile Sass assets'
 
