@@ -32,14 +32,10 @@ steps:
     verbose: false
   displayName: 'Install npm package'
 
-- script: 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'MyApp.exe'
     workingDirectory: 'Angular-Spa'
-  displayName: 'npm build'
-
 - task: gulp@1
   displayName: 'Run gulp tasks'
 
