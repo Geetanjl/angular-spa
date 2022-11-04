@@ -32,7 +32,7 @@ steps:
     verbose: false
   displayName: 'Install npm package'
 
-- script: './node_modules/.bin/MyApp.exe/wwwroot --output MyApp.exe/wwwroot'
+- script: './node_modules/.bin/MyApp.exe/wwwroot --output/.bin/ MyApp.exe/wwwroot'
   displayName: 'npm Install and build'
 
 - task: gulp@1
